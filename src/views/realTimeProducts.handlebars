@@ -1,0 +1,46 @@
+<h1>Agregar productos</h1>
+<div id="contenedor">
+    <div id="formContainer">
+        <form id="form">
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre del Producto</label>
+                <input type="text" class="form-control"  id="title" name="title" placeholder="Title" required />
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Descripción del Producto</label>
+                <input type="text" class="form-control" id="description" name="description" placeholder="Description" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Precio del Producto</label>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Price" required />
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Thumbnail</label>
+                <input type="text" class="form-control" id="thumbnails" name="thumbnails" placeholder="Thumbnails" required />
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Code</label>
+                <input type="text" class="form-control" id="code" name="code" placeholder="Code" required />
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Stock</label>
+                <input type="number" class="form-control" id="stock" name="stock" placeholder="Stock" required />
+            </div>
+ 
+    
+            <button type="submit" class="btn btn-primary" value="Enviar">Enviar</button>
+
+
+
+        </form>
+    </div>
+
+    <div id="productsContainer">
+        <div id="products"></div>
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/index.js"></script>

@@ -1,0 +1,20 @@
+
+<div class="container">
+{{#if products.length}}
+    {{#each products}}
+<div class="card" style="width: 18rem;">
+  <img src="{{thumbnails}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><strong>Precio:</strong> ${{price}}</li>
+    <li class="list-group-item"><strong>Stock::</strong> ${{stock}}</li>
+  </ul>
+</div>
+    {{/each}}
+{{else}}
+    <p>No se encontraron productos</p>
+{{/if}}
+</div>
