@@ -1,8 +1,10 @@
 
 <div class="container">
+  <div class="row">
 {{#if products.length}}
     {{#each products}}
-<div class="card" style="width: 18rem;">
+    <div class="col-12 col-sm-6 col-md-4 p-2">
+<div class="card">
   <img src="{{thumbnails}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{title}}</h5>
@@ -13,8 +15,10 @@
     <li class="list-group-item"><strong>Stock::</strong> ${{stock}}</li>
   </ul>
 </div>
+</div>
     {{/each}}
 {{else}}
     <p>No se encontraron productos</p>
 {{/if}}
+</div>
 </div>

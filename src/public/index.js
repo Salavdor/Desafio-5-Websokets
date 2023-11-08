@@ -26,7 +26,12 @@ socketClient.on('allProducts', (productsList) => {
     products.innerHTML = ''
     let infoProducts = ''
     productsList.forEach(p => {
-        infoProducts += `<p>${p.title} </p></br>`
+        infoProducts += `
+        <tr>
+        <th scope="row">${p.title}</th>
+        <td>$${p.price}</td>
+        <td>${p.description}</td>
+        </tr>`
     })
     products.innerHTML += infoProducts
 })

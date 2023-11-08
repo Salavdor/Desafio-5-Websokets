@@ -1,8 +1,8 @@
-<h1>Agregar productos</h1>
-<div id="contenedor">
-    <div id="formContainer">
-        <form id="form">
 
+<div id="contenedor" class="container">
+    <h1>Agregar productos</h1>
+    <div id="formContainer" class="mb-5">
+        <form id="form">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre del Producto</label>
                 <input type="text" class="form-control"  id="title" name="title" placeholder="Title" required />
@@ -30,15 +30,22 @@
  
     
             <button type="submit" class="btn btn-primary" value="Enviar">Enviar</button>
-
-
-
         </form>
     </div>
 
-    <div id="productsContainer">
-        <div id="products"></div>
-    </div>
+
+    <table class="table table-striped" id="productsContainer">
+  <thead>
+    <tr>
+      <th scope="col">Titulo</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Descripcion</th>
+    </tr>
+  </thead>
+  <tbody id="products">
+    
+  </tbody>
+</table>
 
 </div>
 
